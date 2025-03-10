@@ -1,19 +1,20 @@
 {
-  "name": "auth-microservice",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon src/server.ts"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/node": "^22.13.10",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.2",
-    "nodemon": "^3.1.9"
-  },
-  "dependencies": {
-  }
+    "name": "auth-microservice",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/server.ts",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/node": "^22.13.10",
+        "nodemon": "^3.1.9",
+        "prettier": "3.5.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.2"
+    }
 }
