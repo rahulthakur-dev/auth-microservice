@@ -28,8 +28,8 @@ export default tseslint.config(
             },
         },
         rules: {
-            "no-console": ["warn", { "allow": ["warn", "error", "log"] }],
+            'no-console': ['warn', { allow: ['warn', 'error', 'log'] }],
             'dot-notation': 'error',
         },
-    },
+    }
 )
