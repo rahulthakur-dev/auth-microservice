@@ -1,12 +1,10 @@
 import express, { Request, Response, NextFunction } from 'express'
 import logger from './config/logger'
-import createHttpError, { HttpError } from 'http-errors'
+import { HttpError } from 'http-errors'
+import authRouter from './routes/auth'
 const app = express()
 
-app.get('/', (req, res, next) => {
-    const err = createHttpError(401, 'This is a test error')
-    next(err)
-})
+app.use('/auth', authRouter)
 
 // global error handler
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
